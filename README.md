@@ -60,14 +60,18 @@ Create a python script that calculates the mean of the minimum distance between 
 1. Read the input DNA Fasta file and calculate the length and molecular weight of their corresponding proteins.
 Command line parameters:
 
-  -o --output-file: output file. If not defined, output is printed to standard output. If
+    -o --output-file: output file. If not defined, output is printed to standard output. If
 defined, it prints the output to this file. If output file endswith “.gz”, output must be
 gzipped.
-  -i --input: if this argument is defined and it corresponds to a file, use it as input. If it
+
+    -i --input: if this argument is defined and it corresponds to a file, use it as input. If it
 corresponds to a directory, use all “.fa”, “.fasta”, “.fa.gz” and “.fasta.gz” files in the defined directory. If this argument is not defined, use all “.fa” and “.fasta” files in the current directory.
-  -v --verbose: if this argument is defined, the progression log is printed to standard error. If it is not used, the log is not showed.
-  -p --pattern: string with a regular expression. If defined, output only the sequences having the given regular expression in the ProteinSequence.
-  -r --random: integer defining the number of sequences to be printed in the output. If it not set, the complete output must be printed. If it is defined, a random selection of the defined size has to be printed.
+
+    -v --verbose: if this argument is defined, the progression log is printed to standard error. If it is not used, the log is not showed.
+
+    -p --pattern: string with a regular expression. If defined, output only the sequences having the given regular expression in the ProteinSequence.
+
+    -r --random: integer defining the number of sequences to be printed in the output. If it not set, the complete output must be printed. If it is defined, a random selection of the defined size has to be printed.
  
 Output should be sorted by sequence length, from longest to shortest.
 
